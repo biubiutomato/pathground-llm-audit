@@ -1,0 +1,188 @@
+{
+  "n_claims": 1019,
+  "labels": {
+    "conservative": 931,
+    "mixed": 75,
+    "overclaim": 13
+  },
+  "overclaim_or_mixed": 0.08635917566241413,
+  "strict_overclaim": 0.012757605495583905,
+  "conservative": 0.9136408243375859,
+  "by_support": {
+    "supported": {
+      "conservative": 667,
+      "mixed": 54,
+      "overclaim": 10
+    },
+    "unsupported": {
+      "conservative": 242,
+      "mixed": 15,
+      "overclaim": 1
+    },
+    "hallucinated": {
+      "mixed": 6,
+      "conservative": 22,
+      "overclaim": 2
+    }
+  },
+  "by_split": {
+    "clean": {
+      "conservative": 643,
+      "mixed": 59,
+      "overclaim": 9
+    },
+    "noisy": {
+      "conservative": 134,
+      "overclaim": 2,
+      "mixed": 7
+    },
+    "mixed": {
+      "conservative": 62,
+      "mixed": 4,
+      "overclaim": 1
+    },
+    "decoy": {
+      "conservative": 65,
+      "mixed": 2,
+      "overclaim": 1
+    },
+    "geo_like": {
+      "conservative": 27,
+      "mixed": 3
+    }
+  },
+  "examples": {
+    "overclaim": [
+      {
+        "id": "PC0014",
+        "split": "clean",
+        "name": "PI3K-Akt signaling pathway (KEGG: hsa04151)",
+        "support": "supported",
+        "reason": "AKT1 and PIK3CD are central to this pathway, and several cytokine receptors (IL7R, IL21R, IFNGR1, IFNAR2, CSF2RB, PRL) can activate PI3K-Akt signaling, linking multiple input genes."
+      },
+      {
+        "id": "PC0030",
+        "split": "clean",
+        "name": "NF-kappa B signaling pathway (KEGG: hsa04064)",
+        "support": "supported",
+        "reason": "TRAF6, TRAF3, TAB2, CHUK, IRAK1, and MAP3K8 are key mediators in the NF-kappa B signaling pathway, which is activated downstream of TLRs and cytokine receptors."
+      },
+      {
+        "id": "PC0049",
+        "split": "clean",
+        "name": "Regulation of Complement cascade",
+        "support": "supported",
+        "reason": "CFH, CFHR3, and A2M are regulators of the complement system, modulating its activation and preventing host tissue damage."
+      },
+      {
+        "id": "PC0050",
+        "split": "clean",
+        "name": "Regulation of Complement cascade (Reactome: R-HSA-977606)",
+        "support": "supported",
+        "reason": "CFH, CFHR3, CFHR4, C4BPA, and SERPING1 are regulators of the complement system, modulating its activation and preventing host tissue damage."
+      },
+      {
+        "id": "PC0054",
+        "split": "clean",
+        "name": "PI3K-Akt signaling pathway",
+        "support": "supported",
+        "reason": "ECM proteins and integrins activate PI3K-Akt signaling cascade."
+      },
+      {
+        "id": "PC0079",
+        "split": "clean",
+        "name": "NKG2D signaling (Reactome: R-HSA-198933)",
+        "support": "hallucinated",
+        "reason": "MICB and RAET1E are both ligands for the NKG2D receptor, which is important for NK cell activation and cytotoxicity."
+      }
+    ],
+    "conservative": [
+      {
+        "id": "PC0001",
+        "split": "clean",
+        "name": "Apoptosis (KEGG: hsa04210)",
+        "support": "supported",
+        "reason": "Multiple genes from the set, including TNFRSF10B, TNFSF10, BID, CASP2, and MAPK8, are involved in the apoptosis pathway, mediating both extrinsic and intrinsic cell death signaling."
+      },
+      {
+        "id": "PC0001",
+        "split": "clean",
+        "name": "TNF signaling pathway (KEGG: hsa04668)",
+        "support": "unsupported",
+        "reason": "Genes such as TNFRSF10B, TNFSF10, JUN, MAPK8, and CASP2 participate in the TNF signaling pathway, which regulates inflammation, apoptosis, and cell survival."
+      },
+      {
+        "id": "PC0001",
+        "split": "clean",
+        "name": "MAPK signaling pathway (KEGG: hsa04010)",
+        "support": "unsupported",
+        "reason": "JUN and MAPK8 are key components of the MAPK signaling pathway, which transduces extracellular signals into cellular responses including apoptosis and stress responses."
+      },
+      {
+        "id": "PC0002",
+        "split": "clean",
+        "name": "Apoptosis (KEGG: hsa04210)",
+        "support": "supported",
+        "reason": "Multiple genes from the input set, including CASP8, CASP10, CFLAR, TRADD, AKT1, and IKBKG, are key components of the apoptosis pathway, participating in both extrinsic and intrinsic apoptotic signaling."
+      },
+      {
+        "id": "PC0002",
+        "split": "clean",
+        "name": "Autophagy (Reactome: R-HSA-1632852)",
+        "support": "supported",
+        "reason": "BECN1, BECN2, and AKT1 are involved in the regulation of autophagy, a conserved cellular degradation process, with BECN1 and BECN2 being core autophagy proteins and AKT1 acting as a regulator."
+      },
+      {
+        "id": "PC0002",
+        "split": "clean",
+        "name": "PI3K-Akt signaling pathway (KEGG: hsa04151)",
+        "support": "supported",
+        "reason": "AKT1, PIK3CD, and MAPK1 are all central to the PI3K-Akt signaling pathway, which regulates cell survival, proliferation, and metabolism."
+      }
+    ],
+    "mixed": [
+      {
+        "id": "PC0001",
+        "split": "clean",
+        "name": "Intrinsic Pathway for Apoptosis (Reactome: R-HSA-109606)",
+        "support": "unsupported",
+        "reason": "BID, CASP2, and MAPK8 are involved in the intrinsic (mitochondrial) apoptosis pathway, mediating mitochondrial outer membrane permeabilization and caspase activation."
+      },
+      {
+        "id": "PC0005",
+        "split": "clean",
+        "name": "Chemokine signaling pathway (KEGG: hsa04062)",
+        "support": "supported",
+        "reason": "Chemokines and their receptors, including CCL2, CXCL1, CXCL5, and downstream effectors like AKT3 and MAPK9, are involved in the chemokine signaling pathway, which regulates leukocyte migration and immune cell activation."
+      },
+      {
+        "id": "PC0017",
+        "split": "clean",
+        "name": "B cell receptor signaling pathway (KEGG: hsa04662)",
+        "support": "supported",
+        "reason": "SYK, LYN, and TNFRSF13C are key components of the B cell receptor signaling pathway, which is essential for B cell activation and adaptive immunity."
+      },
+      {
+        "id": "PC0018",
+        "split": "clean",
+        "name": "Toll-like receptor signaling pathway (KEGG: hsa04620)",
+        "support": "supported",
+        "reason": "Genes such as TICAM1, IRAK1, TAB3, CHUK, NFKBIA, and TNF participate in the Toll-like receptor signaling pathway, which is crucial for innate immune system activation."
+      },
+      {
+        "id": "PC0018",
+        "split": "clean",
+        "name": "B cell receptor signaling pathway (KEGG: hsa04662)",
+        "support": "supported",
+        "reason": "SYK, BLNK, PLCG2, and PRKCB are all involved in the B cell receptor signaling pathway, which is essential for B cell activation and adaptive immunity."
+      },
+      {
+        "id": "PC0019",
+        "split": "clean",
+        "name": "DNA Damage Response (Reactome: R-HSA-73894)",
+        "support": "unsupported",
+        "reason": "ATM, CHEK1, CHEK2, DDB2, and RRM2B participate in the detection and repair of DNA damage, including activation of checkpoints and repair mechanisms."
+      }
+    ]
+  }
+}

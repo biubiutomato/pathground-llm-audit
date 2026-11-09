@@ -1,0 +1,25 @@
+{
+  "picked": 60,
+  "modes": {
+    "shuffle": {
+      "n": 60,
+      "jaccard": 0.6804
+    },
+    "drop10": {
+      "n": 60,
+      "jaccard": 0.686
+    },
+    "drop20": {
+      "n": 60,
+      "jaccard": 0.6802
+    },
+    "add10": {
+      "n": 60,
+      "jaccard": 0.7898
+    }
+  },
+  "usage": {
+    "prompt_tokens": 62456,
+    "completion_tokens": 67985
+  }
+}

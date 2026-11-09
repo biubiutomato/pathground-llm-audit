@@ -1,0 +1,27 @@
+{
+  "shuffle": {
+    "closed_book": 0.9398,
+    "ora": 1.0,
+    "n": 229
+  },
+  "drop10": {
+    "closed_book": 0.909,
+    "ora": 0.7918,
+    "n": 229
+  },
+  "drop20": {
+    "closed_book": 0.8244,
+    "ora": 0.6819,
+    "n": 229
+  },
+  "add10": {
+    "closed_book": 0.9388,
+    "ora": 0.9514,
+    "n": 229
+  },
+  "add30": {
+    "closed_book": 0.8901,
+    "ora": 0.8828,
+    "n": 229
+  }
+}
